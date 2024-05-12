@@ -55,7 +55,7 @@ import 'unicode_accents.dart';
 class TexParser {
   TexParser(String content, this.settings)
       : this.leftrightDepth = 0,
-        this.mode = Mode.math,
+        this.mode = Mode.text,
         this.macroExpander = MacroExpander(content, settings, Mode.math);
 
   final TexParserSettings settings;
